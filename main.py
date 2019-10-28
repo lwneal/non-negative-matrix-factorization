@@ -45,10 +45,11 @@ def main():
     print('Computing factorization, please wait...')
     start_time = time.time()
     clusters = factorize(mnist)
-    print('Completed factorization with {} components in {:.2f}'.format(n_components, time.time() - start_time))
+    print('Completed factorization with {} components in {:.3f}s'.format(n_components, time.time() - start_time))
 
     filename = get_filename()
-    imutil.show(clusters, filename=filename, resize_to=(512,512), caption="NMF Clusters")
+    caption = "Summarizing {} samples in {} clusters".format(len(mnist), n_components)
+    imutil.show(clusters, filename=filename, resize_to=(512,512), caption=caption)
     print('Wrote output file to {}'.format(filename))
 
 
