@@ -1,4 +1,4 @@
 numpy
 torch
-scikit-learn
-imutil
+scikit-learn>=0.20
+imutil>=0.2.5
