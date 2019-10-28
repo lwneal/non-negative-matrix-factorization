@@ -9,3 +9,6 @@ python main.py
 
 Requires PyTorch only for the dataset download.
 
+![NMF demo
+image](https://raw.githubusercontent.com/lwneal/non-negative-matrix-factorization/master/output-1572289189290.jpg)
+
